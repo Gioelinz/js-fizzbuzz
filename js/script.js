@@ -7,10 +7,16 @@ ma per i multipli di 3 stampi Fizz al posto del numero e per i multipli di 5 sta
 Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 */
 
-let result = "";
+
+
+//stampo i numeri da 1 a 10
 
 for (let i = 1; i <= 100; i++) {
-    result += `${i} `;
-}
+    let result = '';
+    //condizioni 
+    if (i % 3 === 0) result += 'Fizz';
 
-console.log("result a fine ciclo: ", result)
+    else if (i % 5 === 0) result += 'Buzz';
+
+    console.log("Risultato: ", result || i);
+}
